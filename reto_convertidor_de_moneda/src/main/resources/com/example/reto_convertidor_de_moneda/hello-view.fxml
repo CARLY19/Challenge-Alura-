@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.reto_convertidor_de_moneda.HelloController">
+    <children>
+        <Label text="From Currency (e.g., USD)" />
+        <TextField fx:id="fromCurrencyField" />
+
+        <Label text="To Currency (e.g., EUR)" />
+        <TextField fx:id="toCurrencyField" />
+
+        <Button text="Convert" onAction="#convertCurrency" />
+
+        <Label fx:id="resultLabel" text="Conversion Result will appear here" />
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</VBox>
